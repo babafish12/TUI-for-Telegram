@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "telegterm"
+version = "0.1.0"
+description = "A full-featured Telegram TUI client"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=1.0.0",
+    "rich>=13.0.0",
+    "telethon>=1.36.0",
+    "textual-image>=0.8.0",
+    "Pillow>=10.0.0",
+    "cryptg>=0.4.0",
+    "aiofiles>=23.0.0",
+    "pdf2image>=1.16.0",
+    "pyperclip>=1.8.0",
+]
+
+[project.scripts]
+telegterm = "telegterm.__main__:main"
