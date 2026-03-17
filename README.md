@@ -1,4 +1,4 @@
-# telegterm
+# TUI-for-Telegram
 
 A full-featured Telegram client for the terminal, built with [Textual](https://textual.textualize.io/) and [Telethon](https://docs.telethon.dev/).
 
@@ -38,7 +38,21 @@ sudo apt install poppler-utils ffmpeg xclip
 ## Installation
 
 ```bash
-cd telegterm
+git clone https://github.com/babafish12/TUI-for-Telegram.git
+cd TUI-for-Telegram
+```
+
+### Global install (recommended on Arch Linux)
+
+```bash
+pipx install -e .
+```
+
+### Virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -e .
 ```
 
