@@ -34,6 +34,9 @@ class TelegramService:
     async def is_authorized(self) -> bool:
         return await self.client.is_user_authorized()
 
+    async def qr_login(self):
+        return await self.client.qr_login()
+
     async def send_code(self, phone: str):
         return await self.client.send_code_request(phone)
 

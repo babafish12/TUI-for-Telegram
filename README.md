@@ -64,9 +64,10 @@ telegterm
 
 On first run, you'll be prompted to:
 1. Enter your Telegram API credentials (get them from [my.telegram.org](https://my.telegram.org))
-2. Login with your phone number
-3. Enter the verification code sent by Telegram
-4. Enter your 2FA password (if enabled)
+2. Login via **QR code** (default) or **phone number** (fallback):
+   - **QR code:** Scan the displayed QR code with your Telegram app — done
+   - **Phone number:** Enter your number, receive an SMS code, enter it
+3. Enter your 2FA password (if enabled)
 
 Your session is saved at `~/.config/telegterm/` — you only need to login once.
 
@@ -142,7 +143,7 @@ Switch themes with `T` or in settings (`S`):
 
 ### 0.1.0 (2026-03-17)
 - Initial release
-- Telegram login with phone + 2FA
+- QR code login (default) + phone number fallback + 2FA
 - Chat list with unread counts
 - Real-time messaging
 - Inline image display (Kitty/Sixel/Unicode)
